@@ -1,0 +1,532 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcf1df;
+    color: #0e6b38;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20 px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    border-bottom: 1px solid #fcfbfb;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0a793c;
+    margin: 0;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #020202;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar nav a:hover {
+    color: #228f53;
+}
+
+main {
+    padding-top: 2rem;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #b2e9c0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.product-card .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #272929;
+    margin-bottom: 1rem;
+}
+
+.product-card button {
+    background-color: #218332;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight:  bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #218332;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 10rem;
+    background-color: #0e6b38;
+    color: #f4f4f4;
+}
+.form-cadastro {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-cadastro label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #0e6b38;
+}
+
+.form-cadastro input {
+    width: 94%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #b2e9c0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-cadastro button:hover {
+    background-color: #218332;
+}
+
+.form-cadastro .btn-submit {
+    width: 50%;
+    display: block; 
+    margin: 1.5rem auto 0 auto; 
+    background-color: #0e6b38;
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    text-align: center; 
+}
+
+.form-cadastro .btn-submit:hover {
+    background-color: #218332;
+}
+
+.cart {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d3e8d8;
+    padding: 1rem 0;
+}
+
+.cart-item img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+.cart-item h3 {
+    margin: 0;
+    color: #0e6b38;
+}
+
+.cart-item p {
+    margin: 0.3rem 0;
+}
+
+.remove-btn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #e74c3c;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.finalizar-btn {
+    background-color: #0e6b38;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.finalizar-btn:hover {
+    background-color: #218332;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+    padding: 1rem;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    color: #0e6b38;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.btn-hero {
+    background-color: #0e6b38;
+    color: white;
+    padding: 0.9rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #218332;
+}
+
+.hero-img {
+    flex: 1;
+    max-width: 350px;
+    border-radius: 12px;
+}
+
+/* ====== SOBRE ====== */
+.sobre {
+    background-color: #ffffff;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    text-align: center;
+}
+
+.contato {
+    background-color: #ffffff;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contato-info {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contato-info li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background-color: #0e6b38;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #218332;
+}
+
+/* ====== MENU ATIVO ====== */
+.navbar nav a.active {
+    color: #0e6b38;
+    border-bottom: 2px solid #0e6b38;
+    padding-bottom: 4px;
+}
+
+
+.form-cadastro .btn-submit {
+    width: 50%;
+    display: block; 
+    margin: 1.5rem auto 0 auto; 
+    background-color: #0e6b38;
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    text-align: center; 
+}
+
+.form-cadastro .btn-submit:hover {
+    background-color: #218332;
+}
+
+/* Estilo para alinhar o formulário e o texto informativo lado a lado */
+.login-content {
+    display: flex;
+    justify-content: center; /* Centraliza ambos os blocos na tela */
+    gap: 40px; /* Espaço entre o texto e o formulário */
+    max-width: 1000px; /* Define uma largura máxima para o novo layout */
+    margin: 2rem auto;
+}
+
+/* Estilo para o bloco de texto explicativo */
+.brecho-info {
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    line-height: 1.6;
+}
+
+.brecho-info h3 {
+    color: #0e6b38;
+    font-size: 1.5rem;
+    margin-top: 0;
+    border-bottom: 2px solid #dcf1df;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.brecho-info p {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.brecho-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}
+
+.brecho-info li {
+    margin-bottom: 0.5rem;
+    color: #0a793c;
+    font-weight: bold;
+}
+
+.form-cadastro {
+    margin: 0; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}
+
+@media (max-width: 900px) {
+    .login-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .brecho-info, .form-cadastro {
+        width: 90%; 
+        max-width: 500px; 
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* ====== MINHA CONTA ====== */
+.minha-conta {
+    padding: 2rem;
+    text-align: center;
+}
+
+.account-sections {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+    flex-wrap: wrap; 
+    align-items: stretch; 
+}
+
+.account-card {
+    background-color: #ffffff;
+    border: 1px solid #b2e9c0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    flex: 1; 
+    min-width: 250px;
+    display: flex;
+    flex-direction: column; 
+    min-height: 180px; 
+}
+
+.account-card p {
+    flex-grow: 1; 
+    margin-bottom: 1rem; 
+}
+
+.btn-account {
+    display: inline-block;
+    background-color: #218332;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-account:hover {
+    background-color: #0e6b38;
+}
+
+.logout-btn {
+    display: block;
+    width: 200px;
+    margin: 3rem auto 0 auto;
+    background-color: #c0392b; 
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #e74c3c;
+}
+
+/* Estilo para alinhar o formulário e o texto informativo:
+   Ajuste o 'max-width' aqui para controlar a largura máxima de ambos. */
+.login-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 20px;              
+    max-width: 1200px; /* Aumentei um pouco a largura do container principal */
+    margin: 2rem auto;
+}
+
+/* Estilo para o bloco de texto explicativo */
+.brecho-info {
+    max-width: 600px; /* NOVO: Aumentei a largura máxima */
+    width: 90%; 
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    line-height: 1.6;
+    text-align: left; /* Retornei para 'left' como no seu layout original */
+}
+
+/* Garante que o formulário tenha a mesma largura */
+.form-cadastro {
+    margin: 0; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    max-width: 600px; /* NOVO: Aumentei a largura máxima */
+    width: 90%;
+}
+
